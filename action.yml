@@ -1,6 +1,9 @@
 name: 'Auto Release Draft'
 description: 'Drafts a GitHub release with changes introduced by a newly created tag'
 author: 'Alejandro Lopez Anaya'
+outputs:
+  release-url:
+    description: 'The URL of the GitHub release was drafted'
 runs:
   using: 'node16'
   main: 'dist/index.js'
